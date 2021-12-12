@@ -22,7 +22,7 @@ const routes: Array<RouteConfig> = [
 
   },
   {
-    path: '/ProductForm',
+    path: '/store_test/ProductForm',
     name: 'productForm',
     component: () => import(/* webpackChunkName: "ProductForm" */ '../views/ProductForm.vue'),
   },
