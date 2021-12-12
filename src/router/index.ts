@@ -22,7 +22,7 @@ const routes: Array<RouteConfig> = [
 
   },
   {
-    path: '/store_test/ProductForm',
+    path: '/ProductForm',
     name: 'productForm',
     component: () => import(/* webpackChunkName: "ProductForm" */ '../views/ProductForm.vue'),
   },
@@ -35,7 +35,7 @@ const routes: Array<RouteConfig> = [
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: '/store_test',
   routes,
 });
 

@@ -11,7 +11,7 @@
         <div class="col-4"></div>
         <a
           class="btn btn-outline-warning col-4"
-          :href="'/productForm?id=' + obj.id"
+          :href="'/store_test/productForm?id=' + obj.id"
         >
           Edit
         </a>
