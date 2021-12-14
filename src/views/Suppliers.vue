@@ -42,7 +42,7 @@ export default Vue.extend({
   },
   methods: {
     getSupliers(): void {
-      const url: string = "http://localhost/SCIP/index.php/supplier/get";
+      const url: string = "http://http://benyaagoub.dondominio.top/supplier/get";
       const request: AxiosPromise = axios.get(url);
       request.then(({ data }: AxiosResponse) => {
         console.log(data);

@@ -77,10 +77,10 @@ export default Vue.extend({
       this.createSuppliers(this.data);
     },
     createSuppliers(data: any): void {
-      const url: string = "http://localhost/SCIP/index.php/supplier/create";
+      const url: string = "http://benyaagoub.dondominio.top/supplier/create";
       const request: AxiosPromise = axios.post(url, JSON.stringify(data));
       request.then(({ data }: AxiosResponse) => {
-        window.location.href = '/suppliers';
+        window.location.href = '/store_test/suppliers';
       });
       request.catch(({ data }: AxiosResponse) => {
         // Todo toast error 

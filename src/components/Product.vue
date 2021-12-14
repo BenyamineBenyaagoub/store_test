@@ -64,7 +64,7 @@ export default Vue.extend({
       localStorage.setItem("cart", JSON.stringify(cart));
     },
     deleteProduct(id): void {
-      axios.get("http://localhost/SCIP/index.php/product/delete?id=" + id)
+      axios.get("http://http://benyaagoub.dondominio.top/product/delete?id=" + id)
       .then(res => { 
         window.location.href = "/";
        })

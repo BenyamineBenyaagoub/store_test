@@ -98,7 +98,7 @@ export default Vue.extend({
   },
   methods: {
     getSupliers(): AxiosPromise {
-      const url: string = "http://localhost/SCIP/index.php/supplier/get";
+      const url: string = "http://benyaagoub.dondominio.top/supplier/get";
       const request: AxiosPromise = axios.get(url);
       request.then(({ data }: AxiosResponse) => {
         this.supplier = data;
@@ -107,7 +107,7 @@ export default Vue.extend({
       return request;
     },
     getCategory(): AxiosPromise {
-      const url: string = "http://localhost/SCIP/index.php/category/get";
+      const url: string = "http://benyaagoub.dondominio.top/category/get";
       const request: AxiosPromise = axios.get(url);
       request.then(({ data }: AxiosResponse) => {
         this.category = data;
@@ -116,7 +116,7 @@ export default Vue.extend({
       return request;
     },
     getProducts(): AxiosPromise {
-      const url: string = "http://localhost/SCIP/index.php/product/get";
+      const url: string = "http://benyaagoub.dondominio.top/product/get";
       const request: AxiosPromise = axios.get(url);
       request.then(({ data }: AxiosResponse) => {
         this.products = data;

@@ -160,23 +160,23 @@ export default Vue.extend({
       }
     },
     createProducts(data): void {
-      const url: string = "http://localhost/SCIP/index.php/product/create";
+      const url: string = "http://benyaagoub.dondominio.top/product/create";
       const request: AxiosPromise = axios.post(url, JSON.stringify(data));
       request.then(({ data }: AxiosResponse) => {
-        window.location.href = "/";
+        window.location.href = "/store_test/";
       });
       request.catch(({ data }: AxiosResponse) => {});
     },
     updateProduct(data): void {
-      const url: string = `http://localhost/SCIP/index.php/product/update?id=${this.productId}`;
+      const url: string = `http://benyaagoub.dondominio.top/product/update?id=${this.productId}`;
       const request: AxiosPromise = axios.post(url, JSON.stringify(data));
       request.then(({ data }: AxiosResponse) => {
-        window.location.href = "/";
+        window.location.href = "/store_test/";
       });
       request.catch(({ data }: AxiosResponse) => {});
     },
     getSupliers(): void {
-      const url: string = "http://localhost/SCIP/index.php/supplier/get";
+      const url: string = "http://benyaagoub.dondominio.top/supplier/get";
       const request: AxiosPromise = axios.get(url);
       request.then(({ data }: AxiosResponse) => {
         this.supplier = data;
@@ -184,7 +184,7 @@ export default Vue.extend({
       request.catch(({ data }: AxiosResponse) => {});
     },
     getCategory(): void {
-      const url: string = "http://localhost/SCIP/index.php/category/get";
+      const url: string = "http://benyaagoub.dondominio.top/category/get";
       const request: AxiosPromise = axios.get(url);
       request.then(({ data }: AxiosResponse) => {
         this.category = data;
@@ -192,7 +192,7 @@ export default Vue.extend({
       request.catch(({ data }: AxiosResponse) => {});
     },
     getDiscount(): void {
-      const url: string = "http://localhost/SCIP/index.php/discount/get";
+      const url: string = "http://benyaagoub.dondominio.top/discount/get";
       const request: AxiosPromise = axios.get(url);
       request.then(({ data }: AxiosResponse) => {
         this.discount = data;
@@ -200,7 +200,7 @@ export default Vue.extend({
       request.catch(({ data }: AxiosResponse) => {});
     },
     getProduct(id): void {
-      const url: string = `http://localhost/SCIP/index.php/product/get?id=${id}`;
+      const url: string = `http://benyaagoub.dondominio.top/product/get?id=${id}`;
       const request: AxiosPromise = axios.get(url);
       request.then(({ data }: any) => {
         data.map((data) => {
